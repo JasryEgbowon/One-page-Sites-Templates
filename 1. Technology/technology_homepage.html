@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <title>Nexus Labs - Building Tomorrow's Tech</title>
     <link rel="stylesheet" href="./technology_homepage.css">
 </head>
 <body>
-    <!-- Top nav  -->
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">Example name: Nexus Labs</div>
+            <div class="logo">Nexus Labs</div>
             <ul class="nav-links">
                 <li><a href="#work">Our Work</a></li>
                 <li><a href="#services">Services</a></li>
@@ -20,41 +20,40 @@
         </div>
     </nav>
 
-    <!-- Hero - show what we're about -->
     <section class="hero">
         <div class="hero-content">
             <h1>We build digital experiences that actually work for people</h1>
             <p>Nexus Labs is a tech studio crafting custom software, sleek apps, and platforms that help businesses do what they do better.</p>
             <div class="hero-buttons">
-                <button class="btn-primary"><a href="#services" id="button-n">See Our Work</a></button>
-                <button class="btn-secondary">Meet the Team</a></button>
+                <a href="#services" class="btn-primary">See Our Work</a>
+                <a href="#about" class="btn-secondary">Meet the Team</a>
             </div>
         </div>
         <div class="hero-visual">
-            <!-- Placeholder for a cool tech illustration -->
-            
-            <div class="tech-showcase">
-                <div class="floating-element"></div>
-                <div class="floating-element"></div>
-                <div class="floating-element"></div>
-            </div>
+            <img src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=1000&auto=format&fit=crop" alt="Technology Illustration" class="hero-img-styled">
         </div>
     </section>
 
-    <!-- Client logos - social proof -->
-    <section class="clients">
-        <div class="container">
-            <p>Trusted by teams at</p>
-            <div class="client-logos">
-                <div class="client-logo">[Client Logo 1]</div>
-                <div class="client-logo">[Client Logo 2]</div>
-                <div class="client-logo">[Client Logo 3]</div>
-                <div class="client-logo">[Client Logo 4]</div>
+<section class="clients">
+    <div class="container">
+        <p>Trusted by teams at</p>
+        <div class="client-logos">
+            <div class="client-logo">
+                <img src="/path/to/client_logo1.png" alt="[Client Logo 1]">
+            </div>
+            <div class="client-logo">
+                <img src="/path/to/client_logo2.png" alt="[Client Logo 2]">
+            </div>
+            <div class="client-logo">
+                <img src="/path/to/client_logo3.png" alt="[Client Logo 3]">
+            </div>
+            <div class="client-logo">
+                <img src="/path/to/client_logo4.png" alt="[Client Logo 4]">
             </div>
         </div>
+    </div>
     </section>
 
-    <!-- Our Work - portfolio showcase -->
     <section id="work" class="portfolio">
         <div class="container">
             <h2>Stuff We've Built</h2>
@@ -63,8 +62,7 @@
             <div class="portfolio-grid">
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        [Project Image 1]
-                    </div>
+<img src="https://images.unsplash.com/photo-1556742049-0cfed4f7a07d?auto=format&fit=crop&w=800&q=80" alt="E-commerce Platform" loading="lazy" class="portfolio-img-styled">                    </div>
                     <div class="portfolio-content">
                         <h3>E-commerce Platform</h3>
                         <p>Built a custom online store that increased sales by 200% for a retail client</p>
@@ -78,7 +76,7 @@
                 
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        [Project Image 2]
+                        <img src="https://images.unsplash.com/photo-1512428559087-560fa0db7989?q=80&w=800&auto=format&fit=crop" alt="Mobile Banking App">
                     </div>
                     <div class="portfolio-content">
                         <h3>Mobile Banking App</h3>
@@ -93,7 +91,7 @@
                 
                 <div class="portfolio-item">
                     <div class="portfolio-image">
-                        [Project Image 3]
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop" alt="Data Analytics Dashboard">
                     </div>
                     <div class="portfolio-content">
                         <h3>Data Analytics Dashboard</h3>
@@ -109,33 +107,34 @@
         </div>
     </section>
 
-    <!-- Services - what we offer -->
     <section id="services" class="services">
         <div class="container">
-            <h2 <a href="#our_work"></a> We Can Help</h2>
+            <h2>We Can Help</h2>
             <p class="section-subtitle">From idea to launch and beyond</p>
             
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">💻</div>
+                    <div class="service-icon"><i class="fa-solid fa-laptop-code"></i></div>
                     <h3>Custom Software</h3>
                     <p>Tailored solutions that fit your business like a glove. No more forcing square pegs into round holes.</p>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-icon">📱</div>
+                    <div class="service-icon"><i class="fa-solid fa-mobile"></i></div>
                     <h3>Mobile Apps</h3>
                     <p>iOS and Android apps that people actually want to use. Smooth, fast, and intuitive.</p>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-icon">🌐</div>
+                    <div class="service-icon">
+                        <i class="fa-solid fa-globe" style="color: rgb(52, 52, 231);"></i>
+                    </div> 
                     <h3>Web Platforms</h3>
                     <p>Scalable web applications that grow with your business and handle whatever you throw at them.</p>
                 </div>
                 
                 <div class="service-card">
-                    <div class="service-icon">🔧</div>
+                    <div class="service-icon"><i class="fa-solid fa-wrench"></i></div>
                     <h3>Tech Consulting</h3>
                     <p>Not sure what you need? We'll help you figure out the right tech stack and strategy.</p>
                 </div>
@@ -143,7 +142,6 @@
         </div>
     </section>
 
-    <!-- About - our story -->
     <section id="about" class="about">
         <div class="container">
             <div class="about-content">
@@ -167,13 +165,12 @@
                     </div>
                 </div>
                 <div class="about-image">
-                    [Team Photo or Office Space]
+                    <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop" alt="Nexus Labs Team">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Testimonials - client love -->
     <section class="testimonials">
         <div class="container">
             <h2>Client Words</h2>
@@ -203,7 +200,6 @@
         </div>
     </section>
 
-    <!-- Contact - let's talk -->
     <section id="contact" class="contact">
         <div class="container">
             <div class="contact-content">
@@ -236,25 +232,24 @@
                         <div class="form-group">
                             <textarea placeholder="Tell us about your project..." rows="5" required></textarea>
                         </div>
-                        <button type="submit" class="btn-primary">Send Message</button>
+                        <button type="submit" class="btn-primary" style="width:100%">Send Message</button>
                     </form>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Footer - simple and clean -->
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-brand">
-                    <div class="logo">Nexus Labs</div>
+                    <div class="logo" style="color: white;">Nexus Labs</div>
                     <p>Building technology that makes sense.</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#">LinkedIn(add a link)</a>
-                    <a href="#">Twitter(add a link)</a>
-                    <a href="#">GitHub(add a link)</a>
+                    <a href="#">LinkedIn</a>
+                    <a href="#">Twitter</a>
+                    <a href="#">GitHub</a>
                 </div>
             </div>
             <div class="footer-bottom">

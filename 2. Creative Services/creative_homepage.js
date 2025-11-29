@@ -125,3 +125,35 @@ document.querySelectorAll('.service-card').forEach((card, index) => {
 
 // Console message
 console.log('🎨 Welcome to Studio Nova - where creativity meets strategy');
+// Mobile menu functionality
+const menuToggle = document.querySelector('.menu-toggle');
+const nav = document.querySelector('.nav');
+
+menuToggle.addEventListener('click', function() {
+    // Toggle mobile menu
+    nav.classList.toggle('active');
+    menuToggle.classList.toggle('active');
+    
+    // Prevent body scroll when menu is open
+    document.body.style.overflow = nav.classList.contains('active') ? 'hidden' : '';
+});
+
+// Close mobile menu when clicking on nav links
+document.querySelectorAll('.nav a').forEach(link => {
+    link.addEventListener('click', function() {
+        if (window.innerWidth <= 768) {
+            nav.classList.remove('active');
+            menuToggle.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+    });
+});
+
+// This Closes mobile menu when window is resized to desktop size
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 768) {
+        nav.classList.remove('active');
+        menuToggle.classList.remove('active');
+        document.body.style.overflow = '';
+    }
+});

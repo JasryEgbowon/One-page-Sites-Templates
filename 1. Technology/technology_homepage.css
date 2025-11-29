@@ -109,19 +109,18 @@ body {
     max-width: 500px;
 }
 
-#button-n{
-    text-decoration: none;
-}
-
 .hero-buttons {
     display: flex;
     gap: 1rem;
     flex-wrap: wrap;
 }
 
+/* FIXED: Button styles now apply to anchor tags correctly */
 .btn-primary {
-    background: #8a95af;
+    display: inline-block; /* Ensure it respects padding/dimensions */
+    background: #2563eb; /* Fixed color from previous gray */
     color: white;
+    text-decoration: none; /* Remove underline */
     border: none;
     padding: 1rem 2rem;
     border-radius: 8px;
@@ -129,16 +128,20 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .btn-primary:hover {
     background: #1d4ed8;
     transform: translateY(-2px);
+    color: white;
 }
 
 .btn-secondary {
+    display: inline-block; /* Ensure it respects padding/dimensions */
     background: transparent;
     color: #2563eb;
+    text-decoration: none; /* Remove underline */
     border: 2px solid #2563eb;
     padding: 1rem 2rem;
     border-radius: 8px;
@@ -146,6 +149,7 @@ body {
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-align: center;
 }
 
 .btn-secondary:hover {
@@ -160,29 +164,13 @@ body {
     align-items: center;
 }
 
-.tech-showcase {
-    width: 400px;
-    height: 300px;
-    position: relative;
-    background: #f8fafc;
-    border-radius: 12px;
-    border: 2px dashed #cbd5e1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #64748b;
-}
-
-.tech-showcase::before {
-    content: "Tech Illustration Placeholder";
-}
-
-.floating-element {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    background: #e2e8f0;
-    border-radius: 8px;
+.hero-img-styled {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 20px 40px rgba(37, 99, 235, 0.15);
+    object-fit: cover;
 }
 
 /* Clients section */
@@ -203,6 +191,7 @@ body {
     justify-content: center;
     gap: 3rem;
     flex-wrap: wrap;
+    align-items: center;
 }
 
 .client-logo {
@@ -212,6 +201,28 @@ body {
     color: #94a3b8;
     font-weight: 500;
     border: 1px solid #e2e8f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s ease;
+}
+
+.client-logo:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+}
+
+.client-logo img {
+    max-height: 40px;
+    width: auto;
+    filter: grayscale(100%);
+    opacity: 0.7;
+    transition: all 0.3s ease;
+}
+
+.client-logo:hover img {
+    filter: grayscale(0%);
+    opacity: 1;
 }
 
 /* Portfolio section */
@@ -255,13 +266,20 @@ body {
 
 .portfolio-image {
     height: 300px;
-    background: #e2e8f0;
     border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #64748b;
-    border: 2px dashed #cbd5e1;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.portfolio-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.portfolio-image:hover img {
+    transform: scale(1.05);
 }
 
 .portfolio-content h3 {
@@ -325,8 +343,20 @@ body {
 }
 
 .service-icon {
-    font-size: 3rem;
+    height: 60px; /* Fixed height for alignment */
+    display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 1.5rem;
+    font-size: 3rem;
+    color: #2563eb;
+}
+
+/* Special styling for the image icon so it matches font icons */
+.service-icon img {
+    max-height: 50px;
+    width: auto;
+    object-fit: contain;
 }
 
 .service-card h3 {
@@ -388,13 +418,20 @@ body {
 
 .about-image {
     height: 400px;
-    background: #e2e8f0;
     border-radius: 12px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #64748b;
-    border: 2px dashed #cbd5e1;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.about-image:hover img {
+    transform: scale(1.02);
 }
 
 /* Testimonials */
