@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Family First Services | Support for Families</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- JavaScript -->
+    <script src="script.js" defer></script>
+    <style>
+        /* Inline styles for quick loading */
+        :root {
+            --primary: #4a6fa5;
+            --secondary: #ff7e5f;
+            --accent: #6b8e23;
+            --light: #f8f9fa;
+            --dark: #343a40;
+            --gray: #6c757d;
+            --light-gray: #e9ecef;
+            --shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        body {
+            font-family: 'Open Sans', sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background-color: var(--light);
+        }
+        
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        section {
+            padding: 80px 0;
+        }
+        
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1rem;
+            transition: var(--transition);
+            cursor: pointer;
+            border: none;
+            font-family: 'Montserrat', sans-serif;
+        }
+        
+        .btn-primary {
+            background-color: var(--primary);
+            color: white;
+        }
+        
+        .btn-primary:hover {
+            background-color: #3a5a8c;
+            transform: translateY(-3px);
+            box-shadow: var(--shadow);
+        }
+    </style>
+</head>
+<body>
+    <!-- Header & Navigation -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="#home"><i class="fas fa-heart"></i> Family First Services</a>
+            </div>
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#team">Our Team</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Supporting Families Through Every Challenge</h1>
+                <p>Professional counseling, parenting support, and family therapy services to strengthen relationships and promote wellbeing.</p>
+                <a href="#contact" class="btn btn-primary">Get Help Today</a>
+                <a href="#services" class="btn btn-secondary">Our Services</a>
+            </div>
+            <div class="hero-image">
+                <img src="https://images.unsplash.com/photo-1541559475973-0c8d66f047d5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Happy family">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Our Family Services</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Family First Services has been providing compassionate support to families in our community for over 15 years. Our team of licensed professionals is dedicated to helping families navigate challenges and build stronger, healthier relationships.</p>
+                    <p>We believe that every family deserves access to quality support services regardless of their circumstances. Our sliding scale fee structure ensures that our services are accessible to all.</p>
+                    <div class="stats">
+                        <div class="stat">
+                            <h3>850+</h3>
+                            <p>Families Helped</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Years Experience</p>
+                        </div>
+                        <div class="stat">
+                            <h3>12</h3>
+                            <p>Licensed Professionals</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80" alt="Counselor with family">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="section-title">Our Family Services</h2>
+            <p class="section-subtitle">Comprehensive support for all stages of family life</p>
+            
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-hand-holding-heart"></i>
+                    </div>
+                    <h3>Family Counseling</h3>
+                    <p>Professional therapy to help families improve communication, resolve conflicts, and strengthen relationships.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <h3>Parenting Support</h3>
+                    <p>Guidance for parents facing challenges with child behavior, development, and family dynamics.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-balance-scale"></i>
+                    </div>
+                    <h3>Divorce & Separation</h3>
+                    <p>Support for families navigating separation, co-parenting arrangements, and blended family transitions.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-home"></i>
+                    </div>
+                    <h3>Family Crisis Intervention</h3>
+                    <p>Immediate support for families experiencing crisis situations, trauma, or unexpected challenges.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-baby"></i>
+                    </div>
+                    <h3>Child & Adolescent Therapy</h3>
+                    <p>Specialized counseling for children and teens dealing with emotional, behavioral, or social issues.</p>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <h3>Family Wellness Programs</h3>
+                    <p>Workshops and groups focused on stress management, communication skills, and healthy relationships.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="team">
+        <div class="container">
+            <h2 class="section-title">Meet Our Team</h2>
+            <p class="section-subtitle">Licensed professionals dedicated to your family's wellbeing</p>
+            
+            <div class="team-grid">
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Dr. Sarah Johnson">
+                    <h3>Dr. Sarah Johnson</h3>
+                    <p class="role">Clinical Director, Family Therapist</p>
+                    <p class="bio">20+ years experience in family counseling and trauma-informed care.</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1594824434340-7e7dfc37cabb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Michael Chen">
+                    <h3>Michael Chen</h3>
+                    <p class="role">Child & Adolescent Specialist</p>
+                    <p class="bio">Specializes in play therapy and adolescent mental health support.</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=600&q=80" alt="Lisa Rodriguez">
+                    <h3>Lisa Rodriguez</h3>
+                    <p class="role">Parenting Coach</p>
+                    <p class="bio">Focuses on positive parenting techniques and family communication.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Reach out for support or schedule a consultation</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Our Office</h3>
+                            <p>123 Family Support Lane, Suite 100<br>Community City, CC 12345</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone Number</h3>
+                            <p>(555) 123-4567</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email Address</h3>
+                            <p>help@familyfirstservices.org</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h3>Office Hours</h3>
+                            <p>Mon-Fri: 9am-7pm<br>Sat: 10am-4pm<br>Sun: Emergency Only</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="service">Service Interested In</label>
+                            <select id="service">
+                                <option value="">Select a service</option>
+                                <option value="counseling">Family Counseling</option>
+                                <option value="parenting">Parenting Support</option>
+                                <option value="divorce">Divorce & Separation</option>
+                                <option value="crisis">Family Crisis Intervention</option>
+                                <option value="child">Child & Adolescent Therapy</option>
+                                <option value="wellness">Family Wellness Programs</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#home"><i class="fas fa-heart"></i> Family First Services</a>
+                    <p>Strengthening families through compassionate support and professional guidance.</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#team">Our Team</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-social">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                    <p>Subscribe to our newsletter for family wellness tips</p>
+                    <div class="newsletter">
+                        <input type="email" placeholder="Your email">
+                        <button type="submit"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 Family First Services. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Success Modal -->
+    <div id="successModal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="modal-icon">
+                <i class="fas fa-check-circle"></i>
+            </div>
+            <h3>Message Sent Successfully!</h3>
+            <p>Thank you for reaching out to Family First Services. We'll get back to you within 24 hours.</p>
+            <button class="btn btn-primary close-modal-btn">OK</button>
+        </div>
+    </div>
+
+    
+    
+</body>
+</html>
