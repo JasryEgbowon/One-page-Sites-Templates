@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Savoré Bistro | Food & Beverage</title>
+    <meta
+      name="description"
+      content="Savoré Bistro – a modern food & beverage experience with handcrafted dishes, specialty drinks, and a cozy atmosphere."
+    />
+  
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- Header/Hero image area -->
+    <header class="header" id="home">
+      <nav class="navbar">
+        <div class="nav-logo">
+          <span class="logo-icon"><i class="fa-solid fa-martini-glass-citrus"></i></span>
+          <span class="logo-text">Savoré</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="hero">
+        <div class="hero-content">
+          <p class="hero-tagline">Food & Beverage • Crafted Daily</p>
+          <h1>
+            Taste the <span class="accent">Art</span> of
+            Flavour
+          </h1>
+          <p class="hero-subtitle">
+            From suya nights to jollof brunches, Savoré Bistro celebrates bold
+            African flavors, fresh ingredients, and handcrafted drinks in the heart of the city.
+          </p>
+          <div class="hero-actions">
+            <a href="#menu" class="btn primary-btn">View Signature Menu</a>
+            <a href="#contact" class="btn ghost-btn">Reserve a Table</a>
+          </div>
+          <div class="hero-stats">
+            <div>
+              <h3>120+</h3>
+              <p>Dishes & drinks</p>
+            </div>
+            <div>
+              <h3>4.8</h3>
+              <p>Customer rating</p>
+            </div>
+            <div>
+              <h3>7am–11pm</h3>
+              <p>Every day</p>
+            </div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="hero-main-image">
+            <img
+              src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=900&q=80"
+              alt="Gourmet dish served with a drink"
+            />
+          </div>
+          <div class="hero-secondary hero-secondary-1">
+            <img
+              src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?auto=format&fit=crop&w=600&q=80"
+              alt="Signature cocktails at the bar"
+            />
+            <span><i class="fa-solid fa-champagne-glasses"></i> Signature Drinks</span>
+          </div>
+          <div class="hero-secondary hero-secondary-2">
+            <img
+              src="https://images.unsplash.com/photo-1473093295043-cdd812d0e601?auto=format&fit=crop&w=600&q=80"
+              alt="Fresh brunch plates"
+            />
+            <span><i class="fa-solid fa-mug-hot"></i> All-day Brunch</span>
+          </div>
+        </div>
+      </div>
+      <a href="#menu" class="scroll-down" aria-label="Scroll to menu section">
+        <span></span>
+      </a>
+    </header>
+
+    <!-- About -->
+    <section class="section about" id="about">
+      <div class="section-intro">
+        <p class="section-label">Our Story</p>
+        <h2>Where cozy vibes meet curated flavors</h2>
+        <p class="section-description">
+          Savoré Bistro blends seasonal ingredients, specialty coffee, and
+          artisanal drinks into one unforgettable experience. Every plate and
+          glass is crafted to delight your senses.
+        </p>
+      </div>
+      <div class="about-grid">
+        <div class="about-card">
+          <i class="fa-solid fa-leaf about-icon"></i>
+          <h3>Fresh & local</h3>
+          <p>
+            We partner with local farms and roasters to bring you
+            ingredient‑driven dishes and beverages.
+          </p>
+        </div>
+        <div class="about-card">
+          <i class="fa-solid fa-mug-saucer about-icon"></i>
+          <h3>Coffee to cocktails</h3>
+          <p>
+            Start with single‑origin pour overs and end with crafted cocktails,
+            all under one roof.
+          </p>
+        </div>
+        <div class="about-card">
+          <i class="fa-solid fa-heart about-icon"></i>
+          <h3>Designed for moments</h3>
+          <p>
+            From solo work sessions to celebrations, our space is made for good
+            conversations and better tastes.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Menu -->
+    <section class="section menu" id="menu">
+      <div class="section-intro">
+        <p class="section-label">Signature Selection</p>
+        <h2>African food & beverage highlights</h2>
+        <p class="section-description">
+          A curated list of favorites from West, East, and Southern African kitchens. Tap the
+          categories to explore.
+        </p>
+      </div>
+
+      <div class="menu-filters">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="mains">
+          <i class="fa-solid fa-bowl-food"></i> Mains
+        </button>
+        <button class="filter-btn" data-filter="street">
+          <i class="fa-solid fa-fire-flame-curved"></i> Street Food
+        </button>
+        <button class="filter-btn" data-filter="drinks">
+          <i class="fa-solid fa-wine-glass"></i> Drinks
+        </button>
+      </div>
+
+      <div class="menu-grid">
+        <article class="menu-item" data-category="mains">
+          <div class="menu-info">
+            <h3>Nigerian Jollof Rice & Chicken</h3>
+            <p>Smoky party‑style jollof rice, grilled chicken, plantain, and pepper sauce.</p>
+          </div>
+          <div class="menu-meta">
+            <span class="menu-price">$14</span>
+            <span class="menu-tag">Best seller</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="mains">
+          <div class="menu-info">
+            <h3>Ghanaian Waakye Platter</h3>
+            <p>Rice and beans cooked in millet leaves, shito, gari, boiled egg, and fried fish.</p>
+          </div>
+          <div class="menu-meta">
+            <span class="menu-price">$15</span>
+            <span class="menu-tag">Comfort</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="street">
+          <div class="menu-info">
+            <h3>Charcoal‑Grilled Suya</h3>
+            <p>Thinly sliced beef in spicy yaji rub, served with onions, tomatoes, and cucumbers.</p>
+          </div>
+          <div class="menu-meta">
+            <span class="menu-price">$11</span>
+            <span class="menu-tag">Street classic</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="street">
+          <div class="menu-info">
+            <h3>Kenyan Nyama Choma</h3>
+            <p>Slow‑roasted goat, kachumbari salsa, and ugali wedges for sharing.</p>
+          </div>
+          <div class="menu-meta">
+            <span class="menu-price">$18</span>
+            <span class="menu-tag">For sharing</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="drinks">
+          <div class="menu-info">
+            <h3>Zobo Hibiscus Cooler</h3>
+            <p>Chilled hibiscus and pineapple infusion with cloves, citrus, and a touch of ginger.</p>
+          </div>
+          <div class="menu-meta">
+            <span class="menu-price">$6</span>
+            <span class="menu-tag">Non‑alcoholic</span>
+          </div>
+        </article>
+
+        <article class="menu-item" data-category="drinks">
+          <div class="menu-info">
+            <h3>Palm Wine Sundowner</h3>
+            <p>Lightly sparkling palm wine blend with citrus and tropical fruit bitters.</p>
+          </div>
+          <div class="menu-meta">
+            <span class="menu-price">$12</span>
+            <span class="menu-tag">After hours</span>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section class="section gallery" id="gallery">
+      <div class="section-intro">
+        <p class="section-label">Gallery</p>
+        <h2>A peek into our plates & pours</h2>
+        <p class="section-description">
+          Browse some of our favorite captures. On mobile, swipe sideways to
+          explore.
+        </p>
+      </div>
+
+      <div class="gallery-strip" data-scroll>
+        <figure class="gallery-card">
+          <img
+            src="https://images.unsplash.com/photo-1521017432531-fbd92d768814?auto=format&fit=crop&w=900&q=80"
+            alt="Coffee and dessert pairing"
+          />
+          <figcaption>Morning coffee rituals</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img
+            src="https://images.unsplash.com/photo-1536964549204-655d2a431434?auto=format&fit=crop&w=900&q=80"
+            alt="Cocktail at golden hour"
+          />
+          <figcaption>Golden hour cocktails</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img
+            src="https://images.unsplash.com/photo-1432139555190-58524dae6a55?auto=format&fit=crop&w=900&q=80"
+            alt="Table with plates of food"
+          />
+          <figcaption>Gather around our table</figcaption>
+        </figure>
+        <figure class="gallery-card">
+          <img
+            src="https://images.unsplash.com/photo-1514933651103-005eec06c04b?auto=format&fit=crop&w=900&q=80"
+            alt="Barista pouring latte art"
+          />
+          <figcaption>Barista‑crafted details</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contact / CTA -->
+    <section class="section contact" id="contact">
+      <div class="contact-content">
+        <div class="section-intro">
+          <p class="section-label">Visit Us</p>
+          <h2>Reserve your next favorite moment</h2>
+          <p class="section-description">
+            Tell us when you’re coming and we’ll save you the perfect spot.
+          </p>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-details">
+            <div class="detail">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h3>Location</h3>
+                <p>123 Artisan Street, Downtown District</p>
+              </div>
+            </div>
+            <div class="detail">
+              <i class="fa-solid fa-clock"></i>
+              <div>
+                <h3>Hours</h3>
+                <p>Mon–Sun: 7:00 am – 11:00 pm</p>
+              </div>
+            </div>
+            <div class="detail">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h3>Contact</h3>
+                <p>+1 (555) 123‑4567 • hello@savorebistro.com</p>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="reservation-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Full name" />
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  placeholder="you@example.com"
+                />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required />
+              </div>
+              <div class="form-group">
+                <label for="time">Time</label>
+                <input type="time" id="time" name="time" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="guests">Guests</label>
+                <select id="guests" name="guests" required>
+                  <option value="">Select</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3-4">3–4</option>
+                  <option value="5-6">5–6</option>
+                  <option value="7+">7+</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="occasion">Occasion (optional)</label>
+                <input
+                  type="text"
+                  id="occasion"
+                  name="occasion"
+                  placeholder="Birthday, date night, meeting…"
+                />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Notes</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="3"
+                placeholder="Any special requests?"
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn primary-btn full-width">
+              <i class="fa-solid fa-calendar-check"></i>
+              Request Reservation
+            </button>
+            <p class="form-status" id="form-status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <p>© <span id="year"></span> Savoré Bistro. All rights reserved.</p>
+        <div class="footer-links">
+          <a href="#home">Back to top</a>
+          <span>•</span>
+          <a href="https://instagram.com" target="_blank" rel="noreferrer"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a href="https://facebook.com" target="_blank" rel="noreferrer"
+            ><i class="fa-brands fa-facebook-f"></i
+          ></a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
+

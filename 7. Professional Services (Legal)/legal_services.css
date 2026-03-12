@@ -1,10 +1,3 @@
-/*Notes: for more easy understanding of the code, comments were added throughout the code, and the attributes and class names were made to be similar to the others used in other codes in the project for easy identification and understanding of the code
-*/
-
-/*for more collaborative work and less bugs and errros, no unnecessary framework and code structures were used.
-they are written in easy to understand, and easy to edit way*/
-
-
 /* Global reset: clear margins/paddings and use border-box for sane sizing of the page*/
 * {
     margin: 0;
@@ -139,12 +132,14 @@ h1, h2, h3, h4, .logo {
     left: 0;
     width: 100%;
     height: 100%;
-    background: var(--dark-blue);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: rgba(255, 255, 255, 0.3);
-    font-style: italic;
+    overflow: hidden;
+}
+
+.hero-background img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0.2;
 }
 
 .hero-background::before {
@@ -267,6 +262,7 @@ h1, h2, h3, h4, .logo {
 
 .trust-icon {
     font-size: 1.5rem;
+    color: var(--gold);
 }
 
 .trust-item span {
@@ -322,6 +318,7 @@ h1, h2, h3, h4, .logo {
 .practice-icon {
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
+    color: var(--navy);
 }
 
 .practice-card h3 {
@@ -382,12 +379,13 @@ h1, h2, h3, h4, .logo {
 
 .attorney-image {
     height: 300px;
-    background: var(--light-grey);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-light);
-    font-style: italic;
+    overflow: hidden;
+}
+
+.attorney-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .attorney-info {
@@ -536,6 +534,7 @@ h1, h2, h3, h4, .logo {
 
 .advantage-icon {
     font-size: 1.5rem;
+    color: var(--gold);
     flex-shrink: 0;
     margin-top: 0.25rem;
 }
@@ -552,13 +551,14 @@ h1, h2, h3, h4, .logo {
 
 .why-image {
     height: 500px;
-    background: var(--light-grey);
     border-radius: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--text-light);
-    font-style: italic;
+    overflow: hidden;
+}
+
+.why-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* Testimonials */
@@ -637,6 +637,7 @@ h1, h2, h3, h4, .logo {
 
 .contact-icon {
     font-size: 1.25rem;
+    color: var(--gold);
     flex-shrink: 0;
     margin-top: 0.25rem;
 }
